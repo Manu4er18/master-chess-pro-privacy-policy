@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#15100d" />
+  <title>Delete Account — Master Chess Pro</title>
+  <style>
+    :root{
+      --bg:#120d0b;--card:#2a1d17;--border:rgba(214,178,77,.22);
+      --gold:#d6b24d;--gold2:#f0d681;--text:#f6f0e7;--muted:#cbbcaf;
+      --max:900px;--radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);line-height:1.7;
+      background:radial-gradient(circle at top,rgba(214,178,77,.10),transparent 34%),
+                 linear-gradient(180deg,#17100d 0%,var(--bg) 50%,#0f0b09 100%);
+    }
+    .wrap{width:min(calc(100% - 32px),var(--max));margin:0 auto}
+    header{border-bottom:1px solid var(--border);background:rgba(18,13,11,.82);backdrop-filter:blur(14px)}
+    .nav{min-height:68px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#120d0b;
+          background:linear-gradient(135deg,var(--gold2),var(--gold));font-size:22px}
+    .hero{padding:72px 0 34px;text-align:center}
+    h1{font-size:clamp(38px,7vw,64px);line-height:1.05;margin:0 0 16px;letter-spacing:-1.8px}
+    .hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:18px}
+    .card{margin:18px 0;padding:28px;border:1px solid var(--border);border-radius:var(--radius);
+          background:linear-gradient(180deg,rgba(47,32,25,.88),rgba(34,23,19,.94))}
+    h2{margin:0 0 12px;font-size:24px}
+    p,li{color:var(--muted)}
+    .steps{counter-reset:step;list-style:none;padding:0;margin:18px 0 0}
+    .steps li{counter-increment:step;position:relative;padding:0 0 18px 54px}
+    .steps li::before{
+      content:counter(step);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;
+      display:grid;place-items:center;background:rgba(214,178,77,.12);border:1px solid var(--border);
+      color:var(--gold2);font-weight:800
+    }
+    .email{display:inline-block;margin-top:10px;padding:12px 16px;border-radius:14px;
+      background:rgba(214,178,77,.08);border:1px solid var(--border);color:var(--gold2);text-decoration:none}
+    .note{margin-top:16px;padding:16px 18px;border-left:3px solid var(--gold);border-radius:14px;
+          background:rgba(214,178,77,.075);color:#e5d5c5}
+    footer{padding:28px 0 44px;text-align:center;color:#aa998b;font-size:14px;border-top:1px solid var(--border);margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="mark">♞</div><span>Master Chess Pro</span></div>
+      <div style="color:#cbbcaf;font-size:14px">Account Deletion</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Delete your account</h1>
+      <p>
+        You can request deletion of your Master Chess Pro account and associated account data.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How to request account deletion</h2>
+      <ol class="steps">
+        <li>Email us from the email address associated with your Master Chess Pro account, if applicable.</li>
+        <li>Use the subject line <strong>“Delete Master Chess Pro Account”</strong>.</li>
+        <li>Include your in-app username or account identifier if you have one. Do not send passwords or payment-card information.</li>
+        <li>We will verify the request when necessary and process eligible deletion requests as soon as reasonably possible.</li>
+      </ol>
+      <a class="email" href="mailto:manucerhasanov10@gmail.com?subject=Delete%20Master%20Chess%20Pro%20Account">
+        manucerhasanov10@gmail.com
+      </a>
+    </section>
+
+    <section class="card">
+      <h2>What data may be deleted</h2>
+      <p>Depending on the account and features used, deletion may include:</p>
+      <ul>
+        <li>Account profile information and account identifiers stored by Master Chess Pro.</li>
+        <li>Cloud-saved game progress, achievements and app preferences linked to the account.</li>
+        <li>Backend records associated with the account where deletion is technically and legally permitted.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What may be retained</h2>
+      <p>
+        Some information may be retained where required for legal, security, fraud-prevention, accounting,
+        dispute-resolution or platform-compliance purposes.
+      </p>
+      <ul>
+        <li>Google Play purchase records may remain available through Google Play and related billing systems.</li>
+        <li>Transaction and entitlement records handled by RevenueCat may be retained according to applicable legal and service requirements.</li>
+        <li>Backups may persist for a limited period before being overwritten or deleted.</li>
+      </ul>
+      <div class="note">
+        Deleting a Master Chess Pro account does not itself cancel an active Google Play subscription.
+        Subscription cancellation must be managed through Google Play.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Questions</h2>
+      <p>
+        If you have questions about account deletion or privacy, contact us at
+        <a href="mailto:manucerhasanov10@gmail.com" style="color:#f0d681">manucerhasanov10@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Master Chess Pro · Account Deletion</footer>
+</body>
+</html>
