@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#15100d" />
+  <title>Privacy Policy — Master Chess Pro</title>
+  <style>
+    :root {
+      --bg: #120d0b;
+      --bg-soft: #1a120f;
+      --card: rgba(42, 29, 23, 0.88);
+      --card-strong: #2a1d17;
+      --border: rgba(214, 178, 77, 0.22);
+      --gold: #d6b24d;
+      --gold-2: #f0d681;
+      --text: #f6f0e7;
+      --muted: #cbbcaf;
+      --green: #75d48a;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(214,178,77,.10), transparent 34%),
+        linear-gradient(180deg, #17100d 0%, var(--bg) 50%, #0f0b09 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--gold-2);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(14px);
+      background: rgba(18, 13, 11, 0.76);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: #120d0b;
+      background: linear-gradient(135deg, var(--gold-2), var(--gold));
+      box-shadow: 0 8px 30px rgba(214,178,77,.22);
+      font-size: 22px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .hero {
+      padding: 84px 0 44px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(214,178,77,.07);
+      color: var(--gold-2);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 20px auto 14px;
+      max-width: 760px;
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -2.4px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .meta {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .meta span {
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.06);
+      color: #ddcfc2;
+      font-size: 14px;
+    }
+
+    .toc {
+      margin: 14px 0 34px;
+      padding: 20px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.025);
+      border: 1px solid var(--border);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--gold-2);
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 8px 18px;
+    }
+
+    .toc a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      padding-bottom: 72px;
+    }
+
+    section {
+      scroll-margin-top: 88px;
+      padding: 30px;
+      margin: 18px 0;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(47,32,25,.86), rgba(34,23,19,.92));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    section h2 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      letter-spacing: -.3px;
+    }
+
+    section h3 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+      color: var(--gold-2);
+    }
+
+    section p,
+    section li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .notice {
+      border-left: 3px solid var(--gold);
+      padding: 16px 18px;
+      margin-top: 18px;
+      border-radius: 14px;
+      background: rgba(214,178,77,.075);
+      color: #e5d5c5;
+    }
+
+    .good {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0 44px;
+      color: #aa998b;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      display: grid;
+      gap: 10px;
+      padding: 18px;
+      margin-top: 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+    @media (max-width: 720px) {
+      .hero { padding-top: 56px; }
+      .toc-grid { grid-template-columns: 1fr; }
+      section { padding: 22px; border-radius: 18px; }
+      .pill { display: none; }
+      h1 { letter-spacing: -1.6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="mark">♞</div>
+        <span>Master Chess Pro</span>
+      </div>
+      <div class="pill">Privacy Policy</div>
+    </div>
+  </header>
+
+  <div class="wrap hero">
+    <div class="eyebrow">Privacy & Data Protection</div>
+    <h1>Your privacy matters.</h1>
+    <p>
+      This Privacy Policy explains how Master Chess Pro handles information when you use
+      the app, including gameplay features, advertising, in-app purchases and subscriptions.
+    </p>
+    <div class="meta">
+      <span>Effective: 27 August 2026</span>
+      <span>Android package: com.masterchesspro.app</span>
+      <span>Contact: manucerhasanov10@gmail.com</span>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div class="toc">
+      <strong>Quick navigation</strong>
+      <div class="toc-grid">
+        <a href="#scope">1. Scope</a>
+        <a href="#data">2. Information we process</a>
+        <a href="#use">3. How information is used</a>
+        <a href="#services">4. Third-party services</a>
+        <a href="#purchases">5. Purchases & subscriptions</a>
+        <a href="#ads">6. Advertising</a>
+        <a href="#retention">7. Retention</a>
+        <a href="#rights">8. Your choices & rights</a>
+        <a href="#children">9. Children</a>
+        <a href="#security">10. Security</a>
+        <a href="#changes">11. Changes</a>
+        <a href="#contact">12. Contact</a>
+      </div>
+    </div>
+
+    <section id="scope">
+      <h2>1. Scope</h2>
+      <p>
+        This Privacy Policy applies to the Android application <strong>Master Chess Pro</strong>
+        and to services used to operate its features. It explains what information may be
+        processed, why it is processed, and which service providers may receive it.
+      </p>
+    </section>
+
+    <section id="data">
+      <h2>2. Information we process</h2>
+      <p>Depending on the features you use, the app may process the following categories of information:</p>
+
+      <h3>Account and profile information</h3>
+      <ul>
+        <li>Account identifiers and profile information needed to provide account-based features.</li>
+        <li>App preferences, gameplay progress, achievements, settings and unlocked content.</li>
+      </ul>
+
+      <h3>Gameplay and app activity</h3>
+      <ul>
+        <li>Game progress, chess-related activity, hint balances and feature usage.</li>
+        <li>Diagnostic information used to improve stability and troubleshoot errors.</li>
+      </ul>
+
+      <h3>Purchase information</h3>
+      <ul>
+        <li>Purchase status, product identifiers, subscription status and transaction-related identifiers.</li>
+        <li>We do not directly receive or store your full payment card details. Payments are processed by Google Play.</li>
+      </ul>
+
+      <h3>Device, advertising and technical information</h3>
+      <ul>
+        <li>Device and app information such as operating system version, app version and device characteristics.</li>
+        <li>Advertising identifiers and ad-related technical data where permitted by your device settings and applicable law.</li>
+        <li>IP address and network-related information may be processed by service providers as part of delivering their services.</li>
+      </ul>
+    </section>
+
+    <section id="use">
+      <h2>3. How we use information</h2>
+      <ul>
+        <li>To provide and maintain Master Chess Pro.</li>
+        <li>To save gameplay progress and user preferences.</li>
+        <li>To provide subscriptions, permanent avatar unlocks and consumable hint purchases.</li>
+        <li>To restore eligible purchases.</li>
+        <li>To prevent fraud, abuse and invalid purchase states.</li>
+        <li>To display and measure advertising where applicable.</li>
+        <li>To diagnose crashes, errors and performance problems.</li>
+        <li>To comply with legal, accounting and platform requirements.</li>
+      </ul>
+    </section>
+
+    <section id="services">
+      <h2>4. Third-party services</h2>
+      <p>
+        Master Chess Pro uses third-party services that may process information according to
+        their own privacy policies and terms.
+      </p>
+
+      <h3>Google Play Services / Google Play Billing</h3>
+      <p>
+        Google Play is used to distribute the app and process in-app purchases and subscriptions.
+        Google may process account, device, payment and transaction information for these purposes.
+      </p>
+
+      <h3>Google AdMob</h3>
+      <p>
+        AdMob may be used to serve, limit, personalize where permitted, and measure advertisements.
+        Depending on user consent, device settings and region, Google may process advertising
+        identifiers, device information, IP address and interaction data.
+      </p>
+
+      <h3>RevenueCat</h3>
+      <p>
+        RevenueCat is used to manage purchase status, subscriptions, entitlements and restoration
+        of purchases. It may process app-user identifiers, product identifiers, transaction
+        information and Google Play purchase tokens required to validate purchases.
+      </p>
+
+      <h3>Supabase</h3>
+      <p>
+        Supabase may be used for backend functionality, authentication, storage of app-related
+        user data and server-side functions required by Master Chess Pro.
+      </p>
+
+      <div class="notice">
+        Third-party providers process information under their own terms and privacy policies.
+        We recommend reviewing those policies for more detail about their practices.
+      </div>
+    </section>
+
+    <section id="purchases">
+      <h2>5. In-app purchases and subscriptions</h2>
+      <p>
+        Master Chess Pro offers recurring subscriptions and one-time purchases through Google Play.
+        Purchase processing is handled by Google Play and purchase state is validated through
+        RevenueCat.
+      </p>
+      <ul>
+        <li>Monthly and yearly subscriptions may grant premium benefits such as ad-free access.</li>
+        <li>Avatar purchases are non-consumable and are intended to remain unlocked permanently after a valid purchase.</li>
+        <li>Hint packs are consumable and may be purchased repeatedly after use.</li>
+      </ul>
+      <p>
+        Refunds, billing disputes and payment-method handling are subject to Google Play's billing
+        rules and account settings.
+      </p>
+    </section>
+
+    <section id="ads">
+      <h2>6. Advertising</h2>
+      <p>
+        The free experience may display advertising through Google AdMob. Ad serving can involve
+        processing device and advertising information for ad delivery, fraud prevention,
+        frequency capping, measurement and, where legally permitted and consented to, personalization.
+      </p>
+      <p>
+        Users may be able to control ad personalization through Google account settings, Android
+        privacy settings and consent choices presented in the app where required.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2>7. Data retention</h2>
+      <p>
+        Information is retained only for as long as reasonably necessary to provide the app,
+        maintain purchase and account functionality, comply with legal obligations, prevent fraud,
+        resolve disputes and enforce agreements.
+      </p>
+      <p>
+        Retention periods may vary depending on the type of information and the service provider
+        processing it.
+      </p>
+    </section>
+
+    <section id="rights">
+      <h2>8. Your choices and rights</h2>
+      <p>Depending on your location, you may have rights to request access, correction or deletion of personal information.</p>
+      <ul>
+        <li>You may change certain privacy and advertising settings on your Android device and Google account.</li>
+        <li>You may uninstall the app at any time.</li>
+        <li>You may request deletion of eligible account-related data by contacting us at the email below.</li>
+      </ul>
+      <div class="notice">
+        For a privacy or deletion request, include enough information for us to identify the relevant
+        app account without sending passwords, payment-card details or other highly sensitive information.
+      </div>
+    </section>
+
+    <section id="children">
+      <h2>9. Children</h2>
+      <p>
+        Master Chess Pro is not intended to knowingly collect personal information from children
+        in violation of applicable law. If you believe a child has provided personal information
+        improperly, contact us so we can review and take appropriate action.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>10. Security</h2>
+      <p>
+        We use reasonable technical and organizational measures designed to protect information.
+        However, no method of internet transmission or electronic storage can be guaranteed to be
+        completely secure.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>11. Changes to this Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy when features, service providers, legal requirements or
+        data practices change. The effective date shown at the top of this page will be updated
+        when a new version is published.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>12. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, privacy requests or data deletion requests,
+        contact:
+      </p>
+      <div class="contact-card">
+        <strong>Master Chess Pro</strong>
+        <a href="mailto:manucerhasanov10@gmail.com">manucerhasanov10@gmail.com</a>
+      </div>
+      <p class="good">We aim to review legitimate privacy requests as soon as reasonably possible.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Master Chess Pro · Privacy Policy
+    </div>
+  </footer>
+</body>
+</html>
